@@ -14,7 +14,7 @@ weatherForm.addEventListener('submit', (e) => {
         para1.textContent = 'Please enter the location';
     } else {
         para1.textContent = 'Fetching forecast data ....';
-        fetch(`http://localhost:3000/weather?address=${location}`).then(res => {
+        fetch(`/weather?address=${location}`).then(res => {
             res.json().then(data => {
                 para1.textContent = `The temperature at ${data.locationName} is ${data.temperature}\xB0 C`;
                 para2.textContent = `There is ${data.precipitation} % chance of rain`;
