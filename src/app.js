@@ -1,7 +1,7 @@
 const path = require('path');
 const express = require('express');
 const hbs = require('hbs');
-const weatherService = require('../../weather-app/utils/utils.js')
+const weatherService = require('../public/js/utils.js')
 
 const rootPath = path.join(__dirname, '../public');
 const viewsPath = path.join(__dirname, '../templates/views');
